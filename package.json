@@ -20,7 +20,12 @@
     "financialmodelingprep typescript"
   ],
   "author": "Larry Parks <lpendeavors@gmail.com> (https://github.com/lpendeavors)",
-  "license": "ISC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lpendeavors/ts-financialmodelingprep/issues",
+    "email": "patelneel55@gmail.com"
+  },
+  "homepage": "https://github.com/lpendeavors/ts-financialmodelingprep",
   "devDependencies": {
     "@types/axios": "^0.14.0",
     "@types/dotenv": "^8.2.0",
