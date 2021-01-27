@@ -31,30 +31,40 @@ const url = (params: Parameters): string => {
   let queryString = '';
   let apikey = auth.key;
   url += urlPath;
+
   if(pathParameters) {
-      if (pathParameters instanceof Array)
-          pathParameters = pathParameters.join(',');
-      pathParameters = pathParameters.toUpperCase();
-      url += '/' + pathParameters;
+    if (pathParameters instanceof Array) {
+      pathParameters = pathParameters.join(',');
+    }
+    pathParameters = pathParameters.toUpperCase();
+    url += '/' + pathParameters;
   }
 
   if (queryParameters) {
-      for (const key in queryParameters)
-          if(queryParameters[key] != undefined)
-              queryString += `${key}=${queryParameters[key]}&`;
-
-      if (queryString) {
-          queryString = queryString.slice(0, -1);
-          url += '?' + queryString;
+    for (const key in queryParameters) {
+      if(queryParameters[key] != undefined) {
+        queryString += `${key}=${queryParameters[key]}&`;
       }
+    }
+
+    if (queryString) {
+      url += '?' + queryString;
+    }
   }
+
   if (!queryString) {
-      url += '?'
+    url += '?'
   } else {
     url += '&'
   }
+
   queryString += `apikey=${apikey}`;
+
+  console.log(queryString);
+
   url += queryString;
+
+  console.log(url);
 
   return url;
 }
