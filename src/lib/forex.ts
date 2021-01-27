@@ -1,0 +1,8 @@
+import { makeRequest, generateJson } from './utilities';
+
+export default (from_curr, to_curr) => {
+  return {
+    rate: () => makeRequest('quote', generateJson(from_curr + to_curr)),
+    history: ({ start_date, end_date, data_type, limit }) => makeRequest('historical-price-full/forex', generateJson(from_curr + to_curr, { from: start_date, to: end_date, serietype: data_type, timeseries: limit }))
+  }
+};
