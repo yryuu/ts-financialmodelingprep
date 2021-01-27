@@ -7,8 +7,19 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "financialmodelingprep",
+    "financial modeling prep",
+    "stocks",
+    "api",
+    "stock market api",
+    "stock market",
+    "financial api",
+    "financial data",
+    "financial",
+    "financialmodelingprep typescript"
+  ],
+  "author": "Larry Parks <lpendeavors@gmail.com> (https://github.com/lpendeavors)",
   "license": "ISC",
   "devDependencies": {
     "@types/axios": "^0.14.0",
