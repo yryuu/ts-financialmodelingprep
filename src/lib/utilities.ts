@@ -60,11 +60,7 @@ const url = (params: Parameters): string => {
 
   queryString += `apikey=${apikey}`;
 
-  console.log(queryString);
-
   url += queryString;
-
-  console.log(url);
 
   return url;
 }
