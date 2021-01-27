@@ -74,7 +74,6 @@ const url = (params: Parameters): string => {
  *      parameters which will be parsed by `url` function
  */
 export const generateJson = (pathParam, queryParam = undefined) =>{
-  console.log({queryParam, pathParam});
   return {
     query: queryParam,
     path: pathParam
