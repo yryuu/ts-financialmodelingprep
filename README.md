@@ -25,7 +25,7 @@ FMP_API_KEY=<your_api_key_here>
 ```
 
 ```js
-import "fpm" from "ts-financialmodelingprep"
+import fmp from 'ts-financialmodelingprep'
 
 // Simple Examples
 
