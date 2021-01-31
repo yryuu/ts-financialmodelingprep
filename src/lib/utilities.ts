@@ -48,6 +48,7 @@ const url = (params: Parameters): string => {
     }
 
     if (queryString) {
+      queryString = queryString.slice(0, -1);
       url += '?' + queryString;
     }
   }
@@ -58,9 +59,7 @@ const url = (params: Parameters): string => {
     url += '&'
   }
 
-  queryString += `apikey=${apikey}`;
-
-  url += queryString;
+  url += `apikey=${apikey}`;
 
   return url;
 }
